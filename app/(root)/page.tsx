@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <main className="">
-      <h1>THREADS CLONE</h1>
-    </main>
+    <>
+      <h1 className="head-text text-left">Home</h1>
+    </>
   );
 }
