@@ -4,8 +4,11 @@ import { currentUser } from "@clerk/nextjs";
 
 export default async function Home() {
   const result = await fetchPosts(1, 30);
+  if (!result) return;
+
   const user = await currentUser();
 
+  if (!user) return;
   return (
     <>
       <h1 className="head-text text-left">Home</h1>
